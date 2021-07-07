@@ -47,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-Trying to udr jQuery less, couldn't quite get away from it for some functions
+Trying to use jQuery less, couldn't quite get away from it for some functions
 
 ## Author
 
