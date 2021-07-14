@@ -40,18 +40,6 @@ function pledgeCheck2(radio) {
 
 }
 
-// $(document).ready(function() {
-//   $('.navbar-toggler').click(function() {
-//     console.log($("#navbartext").hasClass("show"));
-//     if(!$("#navbartext").hasClass("show")) {
-//       $('.main').append('<div class="modal-backdrop fade show"></div>');
-//     }
-//     else {
-//       $('.main').remove('<div class="modal-backdrop fade show"></div>');
-//     }
-//   });
-// });
-
 // When a reward is picked, selced that radio button in the modal
 var exampleModal = document.getElementById('exampleModal')
 exampleModal.addEventListener('show.bs.modal', function (event) {
@@ -63,15 +51,11 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
   if (!(reward)) {
     return;
   }
-
   document.getElementById(reward).checked = true;
-
   $(".pledge").not("." +reward).hide();
   $("." + reward).css("display", "flex");
-
   $("." + reward).closest(".card").addClass("highlight");
   $(".pledge").not("." + reward).closest(".card").removeClass("highlight");
-
   $("." + reward).prev(".line").show();
   $(".pledge").not("." + reward).prev(".line").hide();
   
